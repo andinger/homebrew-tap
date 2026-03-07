@@ -5,21 +5,21 @@
 class TeacherToolkitMcp < Formula
   desc "MCP server for teachers — material search, image research, and LehrplanPLUS integration"
   homepage "https://github.com/andinger/teacher-toolkit-mcp"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/andinger/teacher-toolkit-mcp/releases/download/v0.1.5/teacher-toolkit-mcp_0.1.5_darwin_amd64.tar.gz"
-    sha256 "cce5c6dc9afa8c4d34fd712483c7bdab467125977ae3f8f9f0530bd53a1a8f8b"
+    url "https://github.com/andinger/teacher-toolkit-mcp/releases/download/v0.1.6/teacher-toolkit-mcp_0.1.6_darwin_amd64.tar.gz"
+    sha256 "d5c6594adda3ae147ae64a201c30f6842a14dcd77bfcb701b2b0c8f748b3bf3a"
 
     define_method(:install) do
       bin.install "teacher-toolkit-mcp"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/andinger/teacher-toolkit-mcp/releases/download/v0.1.5/teacher-toolkit-mcp_0.1.5_darwin_arm64.tar.gz"
-    sha256 "24df901af173dd65acec8fdf5096fdff540c6f6982ba8f4a3c21c5aad657a7f3"
+    url "https://github.com/andinger/teacher-toolkit-mcp/releases/download/v0.1.6/teacher-toolkit-mcp_0.1.6_darwin_arm64.tar.gz"
+    sha256 "862177d2d525874ec16d739b811d83173785b3eee04a6d124ed036fc903c26cb"
 
     define_method(:install) do
       bin.install "teacher-toolkit-mcp"
