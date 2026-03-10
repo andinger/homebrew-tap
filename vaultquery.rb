@@ -5,21 +5,21 @@
 class Vaultquery < Formula
   desc "Query Obsidian vault files by YAML frontmatter"
   homepage "https://github.com/andinger/vaultquery"
-  version "3.2.1"
+  version "3.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andinger/vaultquery/releases/download/v3.2.1/vaultquery_3.2.1_darwin_amd64.tar.gz"
-      sha256 "4cb80e5fbe36c5c7059c0171b6fb5267e0560947eb62f2743c1c239dc9cfe46e"
+      url "https://github.com/andinger/vaultquery/releases/download/v3.3.0/vaultquery_3.3.0_darwin_amd64.tar.gz"
+      sha256 "8d75acd70de7ebca7093b6f617ee9c1d20a2dbc79ccd0d7dadc6d0051a18f5d5"
 
       define_method(:install) do
         bin.install "vaultquery"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andinger/vaultquery/releases/download/v3.2.1/vaultquery_3.2.1_darwin_arm64.tar.gz"
-      sha256 "253b91f950156fb504328170c9830532d1e155ddb58bdec5a7de30a147aa06fe"
+      url "https://github.com/andinger/vaultquery/releases/download/v3.3.0/vaultquery_3.3.0_darwin_arm64.tar.gz"
+      sha256 "cae3dd6afcbdf9c5dca2001c96573cda91edf32af434b18dbe2109dea79848c2"
 
       define_method(:install) do
         bin.install "vaultquery"
@@ -29,15 +29,15 @@ class Vaultquery < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andinger/vaultquery/releases/download/v3.2.1/vaultquery_3.2.1_linux_amd64.tar.gz"
-      sha256 "686487c6684d96be0f89f56576a3ee88f565a64796f5b4808f0b311d2369ef07"
+      url "https://github.com/andinger/vaultquery/releases/download/v3.3.0/vaultquery_3.3.0_linux_amd64.tar.gz"
+      sha256 "11942ec5784cdffe51cc24705181edaf70f738c1292d2932c640926fbff6e4bc"
       define_method(:install) do
         bin.install "vaultquery"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andinger/vaultquery/releases/download/v3.2.1/vaultquery_3.2.1_linux_arm64.tar.gz"
-      sha256 "a248d003ecee5b9901363af3d53d4bb7e032d4d496093ef0e7e1ab9feaf99ce1"
+      url "https://github.com/andinger/vaultquery/releases/download/v3.3.0/vaultquery_3.3.0_linux_arm64.tar.gz"
+      sha256 "32ee1bc65998d8e136ad25855322364095486d6a89172ad590e20b024a061288"
       define_method(:install) do
         bin.install "vaultquery"
       end
