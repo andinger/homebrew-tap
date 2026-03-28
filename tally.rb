@@ -5,21 +5,21 @@
 class Tally < Formula
   desc "Markdown-to-Tally form builder"
   homepage "https://github.com/andinger/tally-form-cli"
-  version "0.4.3"
+  version "0.4.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.3/tally-form-cli_0.4.3_darwin_amd64.tar.gz"
-      sha256 "6e8caa1c7c0da0076f34cbd460be7a9a992a8f91bb74e43781000c1db311ef68"
+      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.4/tally-form-cli_0.4.4_darwin_amd64.tar.gz"
+      sha256 "921d4706f01a71a3325cd1b166518f51ff8fca4884668a13c513e59f684a5259"
 
       define_method(:install) do
         bin.install "tally"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.3/tally-form-cli_0.4.3_darwin_arm64.tar.gz"
-      sha256 "167c9b704d403f8d6d06c584d30b96d1c2a08b14f49c43f111d4ae72c9abaeda"
+      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.4/tally-form-cli_0.4.4_darwin_arm64.tar.gz"
+      sha256 "70d5165c30d40d6258953d502505db7642a4d8ae1c1a69d08eee69a319192429"
 
       define_method(:install) do
         bin.install "tally"
@@ -29,15 +29,15 @@ class Tally < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.3/tally-form-cli_0.4.3_linux_amd64.tar.gz"
-      sha256 "e2840c1c0904822a565efc253962147c9ba6cd865adb3e2c6b2d1730e987cf85"
+      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.4/tally-form-cli_0.4.4_linux_amd64.tar.gz"
+      sha256 "e7b8df91237a0d7f0a4d894b38df172497c10cde3d70141425b9e0fbad535c5e"
       define_method(:install) do
         bin.install "tally"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.3/tally-form-cli_0.4.3_linux_arm64.tar.gz"
-      sha256 "5a70f5d25e748c6dd92a9f009cdc34f968804e9b83eee0d85e6bcc130ea6056e"
+      url "https://github.com/andinger/tally-form-cli/releases/download/v0.4.4/tally-form-cli_0.4.4_linux_arm64.tar.gz"
+      sha256 "47ebfa92962752290025f2439c48b75cb9d7225fa356885c291b5f6ffa1d0795"
       define_method(:install) do
         bin.install "tally"
       end
